@@ -2,11 +2,11 @@ package com.company.Task6_var5;
 
 public class Solution {
 
-    public static double idealExpFunc (double x) {
+    public static double idealExpFunc(double x) {
         return Math.asin(x);
     }
 
-    public static double expFunc (double x, int n) {
+    public static double expFunc(double x, int n) {
         double sum = 0;
         double term = x;
         if (n != 0) {

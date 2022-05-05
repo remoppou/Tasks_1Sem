@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Task3_var65 {
 
-    public static final Circle CIRCLE = new Circle(-3,-3,4);
+    public static final Circle CIRCLE = new Circle(-3, -3, 4);
 
-    public static final Parabola P1 = new Parabola(2, 3,-1);
+    public static final Parabola P1 = new Parabola(2, 3, -1);
 
     public static final Parabola P2 = new Parabola(-3, -3, -0.25);
 
@@ -16,15 +16,15 @@ public class Task3_var65 {
         if (CIRCLE.isPointInCircle(x, y) && P1.isPointLeftOfParabola(x, y)) {
             return SimpleColor.WHITE;
         }
-        if (!CIRCLE.isPointInCircle(x, y) && !P1.isPointLeftOfParabola(x, y) && !P2.isPointLeftOfParabola(x, y) && x<-3 && 1>y && y>0) {
+        if (!CIRCLE.isPointInCircle(x, y) && !P1.isPointLeftOfParabola(x, y) && !P2.isPointLeftOfParabola(x, y) && x < -3 && 1 > y && y > 0) {
             return SimpleColor.WHITE;
         }
         if ((P1.isPointLeftOfParabola(x, y) && P2.isPointLeftOfParabola(x, y)) ||
                 (P2.isPointLeftOfParabola(x, y) && P3.isPointRightOfParabola(x, y)) ||
-                (P2.isPointRightOfParabola(x, y) && P3.isPointLeftOfParabola(x, y) && y<-6 )) {
+                (P2.isPointRightOfParabola(x, y) && P3.isPointLeftOfParabola(x, y) && y < -6)) {
             return SimpleColor.YELLOW;
         }
-        if (CIRCLE.isPointInCircle(x, y)){
+        if (CIRCLE.isPointInCircle(x, y)) {
             return SimpleColor.GRAY;
         }
         if (P1.isPointLeftOfParabola(x, y) || P2.isPointLeftOfParabola(x, y)) {
@@ -37,7 +37,7 @@ public class Task3_var65 {
     }
 
     public static void printColorForPoint(double x, double y) {
-        System.out.println("(" + x + "; " + y + ") -> " + getColor(x,y));
+        System.out.println("(" + x + "; " + y + ") -> " + getColor(x, y));
     }
 
     public static void main(String[] args) {

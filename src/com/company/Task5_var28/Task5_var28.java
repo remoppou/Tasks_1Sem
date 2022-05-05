@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task5_var28 {
 
-    public static void FirstLine (int s) {
+    public static void FirstLine(int s) {
         for (int w = 1; w <= s; w++) {
             if (w > s / 2) {
                 System.out.print("*");
@@ -13,18 +13,18 @@ public class Task5_var28 {
         System.out.println();
     }
 
-    public static void LastLine (int s) {
+    public static void LastLine(int s) {
         for (int w = 1; w <= s / 2; w++) {
             System.out.print("*");
         }
         System.out.println();
     }
 
-    public static void printPicture (int s) {
+    public static void printPicture(int s) {
         FirstLine(s);
         for (int i = 1; i <= s - 2; i++) {
             if (i <= (s - 2) / 2) {
-                for (int w = 1; w <= s-i; w++) {
+                for (int w = 1; w <= s - i; w++) {
                     if (w <= s / 2) {
                         System.out.print(" ");
                         continue;
